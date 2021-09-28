@@ -1,0 +1,48 @@
+{
+  "name": "polyglot",
+  "description": "A multilingual clean Ghost theme",
+  "demo": "https://demo.ghost.io",
+  "version": "0.0.1",
+  "engines": {
+    "ghost": ">=4.0.0",
+    "ghost-api": "v4"
+  },
+  "license": "MIT",
+  "screenshots": {
+    "desktop": "assets/screenshot-desktop.jpg",
+    "mobile": "assets/screenshot-mobile.jpg"
+  },
+  "scripts": {
+    "dev": "sass --watch ./src/sass/main.scss ./assets/css/main.css",
+    "build": "npm run build"
+  },
+  "author": {
+    "name": "Serhii Prykhozhyi",
+    "email": "me@serhii.ca",
+    "url": "https://serhii.ca/"
+  },
+  "gpm": {
+    "type": "theme",
+    "categories": [
+      "Minimal",
+      "Magazine",
+      "Multilingual"
+    ]
+  },
+  "keywords": [
+    "ghost",
+    "theme",
+    "ghost-theme",
+    "multilingual"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sprihozhiy/polyglot.git"
+  },
+  "config": {
+    "posts_per_page": 10
+  },
+  "dependencies": {
+    "sass": "^1.42.1"
+  }
+}
