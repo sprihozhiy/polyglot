@@ -1,1 +1,3 @@
-# polyglot
+# Polyglot
+
+Multilingual Clean Ghost Theme
