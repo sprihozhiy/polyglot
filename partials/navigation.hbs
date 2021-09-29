@@ -1,0 +1,397 @@
+<div class="header_primary" id="header-primary">
+    <div class="header_primary_logo">
+        <a href="https://blockstream.com/"><img src="https://blockstream.com/img/icons/logo_blks.png" alt="Blockstream"></a>
+    </div>
+   
+    <div class="hamburger header_primary_mobile-menu-button" onclick="mobileNavToggle()">
+        <div class="bar top"></div>
+        <div class="bar middle"></div>
+        <div class="bar bottom"></div>
+    </div>
+   
+    <nav class="header_primary_navigation">
+        <ul class="header_primary_navigation_list">
+            <li class="header_primary_navigation_item">
+                <a class='header_primary_navigation_item_link header_primary_navigation_dropdown-button {% if page.url == "/liquid/" or page.url == "/cryptofeed/" or page.url == "/satellite/" %}primary-link-active{% endif %}' id="nav-dropdown-products" href="#" onclick="mobileNavDropdown(event)">
+                Products
+                <span>
+                    <div class="arrow-icon">
+                        <div class="arrow a-top"></div>
+                        <div class="arrow a-bottom"></div>
+                    </div>
+                </span>
+                </a>
+                <ul class="header_primary_navigation_item_sub-list" id="primary_navigation_list_products">
+                    <li class="header_primary_navigation_item_sub-list_header">
+                        <div class="product-subnav">
+                            <div class="product-subnav-col">
+                                <h4>PRODUCTS</h4>
+                                <ul class="product-subnav-grid-container">
+                                    <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_liquid">
+                                        <a class='product-subnav-grid-container_link {% if page.url == "/liquid/" %}nav-link-active{% endif %}' data-nav-item="liquid" href="https://blockstream.com/liquid/">
+                                            <div class="header_primary_navigation_item_sub-list_item_link">
+                                                <div class="product-subnav-grid-container_icon">
+                                                    <img src="https://blockstream.com/img/nav_icons/navigation_icons_liquid_solid_colour.svg"/>
+                                                </div>
+                                                <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                    <p class="header_primary_navigation_item_sub-list_item_link_block_title">Liquid Network</p>
+                                                    <p class="header_primary_navigation_item_sub-list_item_link_block_text">A sidechain-based settlement network for traders.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_block-explorer">
+                                        <a class='product-subnav-grid-container_link {% if page.url == "/amp/" %}nav-link-active{% endif %}' data-nav-item="amp" href="https://blockstream.com/amp/">
+                                            <div class="header_primary_navigation_item_sub-list_item_link">
+                                                <div class="product-subnav-grid-container_icon">
+                                                    <img src="https://blockstream.com/img/nav_icons/navigation_icons_amp_solid_colour.svg"/>
+                                                </div>                                    
+                                                <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                    <p class= "header_primary_navigation_item_sub-list_item_link_block_title">Blockstream AMP</p>
+                                                    <p class="header_primary_navigation_item_sub-list_item_link_block_text">An API to issue and manage digital assets on the Liquid Network.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_block-explorer">
+                                        <a class='product-subnav-grid-container_link' data-nav-item="elements" href="https://blockstream.com/finance/bmn">
+                                            <div class="header_primary_navigation_item_sub-list_item_link">
+                                                <div class="product-subnav-grid-container_icon">
+                                                    <img class="finance-icon" src="https://blockstream.com/img/nav_icons/navigation_icons_finance_solid_colour.svg"/> 
+                                                </div>                                    
+                                                <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                    <p class= "header_primary_navigation_item_sub-list_item_link_block_title">Blockstream Finance</p>
+                                                    <p class="header_primary_navigation_item_sub-list_item_link_block_text">Financial products for the <br/>Bitcoin era.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_mining">
+                                        <a class='product-subnav-grid-container_link {% if page.url == "/lightning/" %}nav-link-active{% endif %}' data-nav-item="lightning" href="https://blockstream.com/lightning/">
+                                            <div class="header_primary_navigation_item_sub-list_item_link">
+                                                <div class="product-subnav-grid-container_icon">
+                                                    <img class="clight-icon" src="https://blockstream.com/img/nav_icons/navigation_icons_lightning_solid_colour_original.svg"/>
+                                                </div>                                    
+                                                <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                    <p class= "header_primary_navigation_item_sub-list_item_link_block_title">c-lightning</p>
+                                                    <p class="header_primary_navigation_item_sub-list_item_link_block_text">Our own implementation of the Lightning protocol.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_green-address">
+                                        <a class='product-subnav-grid-container_link {% if page.url == "/mining/" %}nav-link-active{% endif %}' data-nav-item="mining" href="https://blockstream.com/mining/">
+                                            <div class="header_primary_navigation_item_sub-list_item_link"> 
+                                                <div class="product-subnav-grid-container_icon">
+                                                    <img src="https://blockstream.com/img/nav_icons/navigation_icons_mining_solid_colour.svg"/>
+                                                </div>                                   
+                                                <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                    <p class= "header_primary_navigation_item_sub-list_item_link_block_title">Blockstream Mining</p>
+                                                    <p class="header_primary_navigation_item_sub-list_item_link_block_text">Colocation services for Bitcoin mining operations.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_mining">
+                                        <a class='product-subnav-grid-container_link {% if page.url == "/cryptofeed/" %}nav-link-active{% endif %}' data-nav-item="ice" href="https://blockstream.com/cryptofeed/">
+                                            <div class="header_primary_navigation_item_sub-list_item_link">
+                                                <div class="product-subnav-grid-container_icon">
+                                                    <img src="https://blockstream.com/img/nav_icons/navigation_icons_datafeed_solid.svg"/>
+                                                </div>                                    
+                                                <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                    <p class= "header_primary_navigation_item_sub-list_item_link_block_title">Cryptocurrency Data Feed</p>
+                                                    <p class="header_primary_navigation_item_sub-list_item_link_block_text">Real-time and historical cryptocurrency trade data.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_green-address">
+                                        <a class='product-subnav-grid-container_link {% if page.url == "/energy/" %}nav-link-active{% endif %}' data-nav-item="energy" href="https://blockstream.com/energy/">
+                                            <div class="header_primary_navigation_item_sub-list_item_link"> 
+                                                <div class="product-subnav-grid-container_icon">
+                                                    <img src="https://blockstream.com/img/nav_icons/navigation_icons_energy_solid_colour.svg"/>
+                                                </div>                                   
+                                                <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                    <p class= "header_primary_navigation_item_sub-list_item_link_block_title">Blockstream Energy</p>
+                                                    <p class="header_primary_navigation_item_sub-list_item_link_block_text">Instant energy demand from the Bitcoin network</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_satellite">
+                                        <a class='product-subnav-grid-container_link {% if page.url == "/satellite/" %}nav-link-active{% endif %}' data-nav-item="satellite" href="https://blockstream.com/satellite/">
+                                            <div class="header_primary_navigation_item_sub-list_item_link">
+                                                <div class="product-subnav-grid-container_icon">
+                                                    <img src="https://blockstream.com/img/nav_icons/navigation_icons_satellite_solid_colour.svg"/>
+                                                </div>                                    
+                                                <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                    <p class= "header_primary_navigation_item_sub-list_item_link_block_title">Blockstream Satellite</p>
+                                                    <p class="header_primary_navigation_item_sub-list_item_link_block_text">The Bitcoin blockchain, delivered from space.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_block-explorer">
+                                        <a class='product-subnav-grid-container_link {% if page.url == "/elements/" %}nav-link-active{% endif %}' data-nav-item="elements" href="https://blockstream.com/elements/">
+                                            <div class="header_primary_navigation_item_sub-list_item_link"> 
+                                                <div class="product-subnav-grid-container_icon">
+                                                    <img src="https://blockstream.com/img/nav_icons/navigation_icons_elements_solid_colour.svg"/>
+                                                </div>                                   
+                                                <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                    <p class= "header_primary_navigation_item_sub-list_item_link_block_title">Elements</p>
+                                                    <p class="header_primary_navigation_item_sub-list_item_link_block_text">An open-source, sidechain-capable blockchain platform.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>   
+                                </ul>
+                            </div>
+                            <div class="product-subnav-col">  
+                                <h4>WALLETS & EXPLORER</h4>         
+                                <ul class="product-subnav-grid-container">
+                                    <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_block-explorer">
+                                        <a class='product-subnav-grid-container_link {% if page.url == "/aqua/" %}nav-link-active{% endif %}' data-nav-item="aqua" href="https://blockstream.com/aqua/">
+                                            <div class="header_primary_navigation_item_sub-list_item_link">
+                                                <div class="product-subnav-grid-container_icon">
+                                                    <img src="https://blockstream.com/img/nav_icons/navigation_icons_aqua_solid_colour.svg"/>
+                                                </div>                                    
+                                                <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                    <p class= "header_primary_navigation_item_sub-list_item_link_block_title">AQUA</p>
+                                                    <p class="header_primary_navigation_item_sub-list_item_link_block_text">A simple Bitcoin and Liquid wallet built for everyone.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_block-explorer">
+                                        <a class='product-subnav-grid-container_link {% if page.url == "/jade/" %}nav-link-active{% endif %}' data-nav-item="jade" href="https://blockstream.com/jade/">
+                                            <div class="header_primary_navigation_item_sub-list_item_link">  
+                                                <div class="product-subnav-grid-container_icon">
+                                                    <img src="https://blockstream.com/img/nav_icons/navigation_icons_jade_solid_colour.svg"/>
+                                                </div>                                  
+                                                <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                    <p class= "header_primary_navigation_item_sub-list_item_link_block_title">Blockstream Jade</p>
+                                                    <p class="header_primary_navigation_item_sub-list_item_link_block_text">A fully open-source hardware wallet for Bitcoin and Liquid.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_ice">
+                                    <a class='product-subnav-grid-container_link {% if page.url == "/green/" %}nav-link-active{% endif %}' data-nav-item="green-address" href="https://blockstream.com/green/">
+                                            <div class="header_primary_navigation_item_sub-list_item_link">    
+                                                <div class="product-subnav-grid-container_icon">
+                                                    <img src="https://blockstream.com/img/nav_icons/navigation_icons_green_solid_colour.svg"/>
+                                                </div>                                
+                                                <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                    <p class= "header_primary_navigation_item_sub-list_item_link_block_title">Blockstream Green</p>
+                                                    <p class="header_primary_navigation_item_sub-list_item_link_block_text">A multi-platform, feature-rich Bitcoin and Liquid wallet.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_mining">
+                                        <a class='product-subnav-grid-container_link' data-nav-item="block-explorer" href="https://blockstream.info" target="_blank">
+                                            <div class="header_primary_navigation_item_sub-list_item_link">
+                                                <div class="product-subnav-grid-container_icon">
+                                                    <img src="https://blockstream.com/img/nav_icons/navigation_icons_explorer_solid.svg"/>
+                                                </div>                                    
+                                                <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                                    <p class= "header_primary_navigation_item_sub-list_item_link_block_title">Blockstream Explorer</p>
+                                                    <p class="header_primary_navigation_item_sub-list_item_link_block_text">Search data from the Bitcoin and Liquid blockchains.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>                  
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="header_primary_navigation_item">
+                <a class='header_primary_navigation_item_link header_primary_navigation_dropdown-button' id="nav-dropdown-news" href="#" onclick="mobileNavDropdown(event)">
+                Newsroom
+                <span>
+                    <div class="arrow-icon">
+                        <div class="arrow a-top"></div>
+                        <div class="arrow a-bottom"></div>
+                    </div>
+                </span>
+                </a>
+                <ul class="header_primary_navigation_item_sub-list" id="primary_navigation_list_news">
+                    <li class="header_primary_navigation_item_sub-list_header">
+                        <ul class="subnav-grid-container"> 
+                            <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_blog">  
+                                <div class="header_primary_navigation_item_sub-list_item_link">
+                                    <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                        <a class='header_primary_navigation_item_sub-list_item_link_block_title {% if page.url == "/blog/" %}nav-link-active{% endif %} blog-link' href="https://blockstream.com/blog/" data-nav-item="blog" onclick="blogLinkClicked(event)">
+                                        <i class="fal fa-edit header_primary_navigation_item_sub-list_item_link_icon header_primary_navigation_item_sub-list_item_link_icon_font-awesome"></i>Blog</a>
+                                    </div>
+                                </div>
+                            </li>
+                              <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_press-newsroom">  
+                                <div class="header_primary_navigation_item_sub-list_item_link">
+                                    <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                        <a class='header_primary_navigation_item_sub-list_item_link_block_title {% if page.url == "/newsroom/" %}nav-link-active{% endif %}' href="https://blockstream.com/newsroom/" data-nav-item="newsroom">
+                                        <i class="fal fa-newspaper header_primary_navigation_item_sub-list_item_link_icon header_primary_navigation_item_sub-list_item_link_icon_font-awesome"></i>In The News</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_press-release">  
+                                <div class="header_primary_navigation_item_sub-list_item_link">
+                                    <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                        <a class='header_primary_navigation_item_sub-list_item_link_block_title {% if page.url == "/press-releases/" %}nav-link-active{% endif %}' href="https://blockstream.com/press-releases/" data-nav-item="press-release">
+                                        <i class="fal fa-list-alt header_primary_navigation_item_sub-list_item_link_icon header_primary_navigation_item_sub-list_item_link_icon_font-awesome"></i>Press Releases</a>                                        
+                                    </div>
+                                </div>
+                            </li>
+                             <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_brand-assets">  
+                                <div class="header_primary_navigation_item_sub-list_item_link">
+                                    <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                        <a class='header_primary_navigation_item_sub-list_item_link_block_title {% if page.url == "/brand-assets/" %}nav-link-active{% endif %}' href="https://blockstream.com/brand-assets/" data-nav-item="brand-assets">
+                                        <i class="fal fa-toolbox header_primary_navigation_item_sub-list_item_link_icon header_primary_navigation_item_sub-list_item_link_icon_font-awesome"></i>Brand Assets</a>                                        
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="header_primary_navigation_item">
+                <a class='header_primary_navigation_item_link header_primary_navigation_dropdown-button' id="nav-dropdown-developer" href="#" onclick="mobileNavDropdown(event)">
+                Developers
+                <span>
+                    <div class="arrow-icon">
+                        <div class="arrow a-top"></div>
+                        <div class="arrow a-bottom"></div>
+                    </div>
+                </span>
+                </a>
+                <ul class="header_primary_navigation_item_sub-list" id="primary_navigation_list_developer">
+                    <li class="header_primary_navigation_item_sub-list_header">
+                        <ul class="subnav-grid-container">
+                            <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_eng-blog">                                 
+                                <div class="header_primary_navigation_item_sub-list_item_link">
+                                 
+                                    <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                        <a class='header_primary_navigation_item_sub-list_item_link_block_title' href="https://medium.com/blockstream" target="blank" data-nav-item="eng-blog">
+                                           <i class="fal fa-cog header_primary_navigation_item_sub-list_item_link_icon header_primary_navigation_item_sub-list_item_link_icon_font-awesome"></i>Engineering Blog</a> 
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_documentation">                                 
+                                <div class="header_primary_navigation_item_sub-list_item_link">
+                                    
+                                    <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                        <a class='header_primary_navigation_item_sub-list_item_link_block_title' href="https://docs.blockstream.com" target="blank" data-nav-item="documentation">
+                                        <i class="fal fa-code header_primary_navigation_item_sub-list_item_link_icon header_primary_navigation_item_sub-list_item_link_icon_font-awesome"></i>Documentation</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="header_primary_navigation_item">
+                <a class='header_primary_navigation_item_link header_primary_navigation_dropdown-button {% if page.url == "/about/" or page.url == "/careers/ or page.url == "/contact/" %}primary-link-active{% endif %}' id="nav-dropdown-about" href="#" onclick="mobileNavDropdown(event)">
+                Company
+                <span>
+                    <div class="arrow-icon">
+                        <div class="arrow a-top"></div>
+                        <div class="arrow a-bottom"></div>
+                    </div>
+                </span>
+               </a>
+                <ul class="header_primary_navigation_item_sub-list" id="primary_navigation_list_about">
+                    <li class="header_primary_navigation_item_sub-list_header">
+                        <ul class="subnav-grid-container">
+                            <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_research">
+                                <div class="header_primary_navigation_item_sub-list_item_link">                                   
+                                    <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                        <a class='header_primary_navigation_item_sub-list_item_link_block_title {% if page.url == "/research/" %}nav-link-active{% endif %}' href="https://blockstream.com/research/" data-nav-item="research">
+                                         <i class="fal fa-book-open header_primary_navigation_item_sub-list_item_link_icon header_primary_navigation_item_sub-list_item_link_icon_font-awesome"></i>Research</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_about">
+                                <div class="header_primary_navigation_item_sub-list_item_link">
+                                    <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                        <a class='header_primary_navigation_item_sub-list_item_link_block_title {% if page.url == "/about/" %}nav-link-active{% endif %}' href="https://blockstream.com/about/" data-nav-item="about">
+                                        <i class="fal fa-building header_primary_navigation_item_sub-list_item_link_icon header_primary_navigation_item_sub-list_item_link_icon_font-awesome"></i>About</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header_primary_navigation_item_sub-list_item" id="primary_navigation_careers">
+                                <div class="header_primary_navigation_item_sub-list_item_link">
+                                    <div class="header_primary_navigation_item_sub-list_item_link_block">
+                                        <a class='header_primary_navigation_item_sub-list_item_link_block_title {% if page.url == "/careers/" %}nav-link-active{% endif %}' href="https://blockstream.com/careers/" data-nav-item="careers">
+                                         <i class="fal fa-user header_primary_navigation_item_sub-list_item_link_icon header_primary_navigation_item_sub-list_item_link_icon_font-awesome"></i>Careers</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="header_primary_navigation_item store-link">
+                <a class="header_primary_navigation_item_link " href="https://store.blockstream.com/">Store</a>
+            </li>
+
+            <li class="header_primary_navigation_item store-link">
+                <a class="header_primary_navigation_item_link " href="https://help.blockstream.com/">Support</a>
+            </li>
+            
+            <li class="header_primary_navigation_item header_primary_navigation_item_no-line">
+                <div data-language-select class="lang-btn"></div>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<style>
+ 
+
+  [data-language-select] {
+	background: #111;
+	color: white;
+	border-radius: 1.6em;
+	overflow: hidden;
+	
+}
+
+[data-language-select] button {
+	padding: .8em 1.2em;
+	appearance: none;
+	border: none;
+	color: inherit;
+	background: inherit;
+}
+
+[data-language-select] ul {
+	display: none;
+	list-style: none;
+	padding: 0 0 .8em;
+	margin: 0;
+}
+
+[data-language-select] [aria-expanded="true"] + ul {
+	display: block;
+}
+
+[data-language-select] a {
+	color: inherit;
+	padding: .2em 1.2em;
+	display: inline-block;
+}
+</style>
